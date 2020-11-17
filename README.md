@@ -26,7 +26,7 @@ Rules:
 Code at least 2 hrs/ day
 Can miss 2 days/ 2 weeks, but must make up the time later whether by adding hours or do more days after 100
 Push something to Github ideally every day, but at least once a week
-Post Progress here if I want https://gitter.im/Kallaway/100DaysOfCode, FB Groups, or Twitter
+
 Obstacles to Overcome:
 
 Procrastinating

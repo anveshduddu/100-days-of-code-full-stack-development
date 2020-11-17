@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+h2,p{
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body{
+  border-style: solid;
+  border-color: violet;
+}
+</style>
+</head>
+<body onload="myFunction()">
+<div class="row" >
+  <div class="column" style="background-color:#444444;">
+    <h2>Full stack Development</h2>
+    
+<table>
+  <tr>
+    <th>Start Time</th>
+    <th>End Time</th>
+  </tr>
+  <tr>
+    <td style="color: black;">17-11-2020</td>
+    <td style="color: black;">25-02-2021</td>
+ 
+  </tr>
+ 
+</table>
+  </div>
+  <div class="column" style="background-color:#444444;">
+ <h2>Time Remaining</h2>  
+    <p id="demo"></p>
+  </div>
+</div>
+<script>
+function myFunction() {
+  alert("Day 1");
+}
+
+var countDownDate = new Date("Feb 24, 2021 23:59:59").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

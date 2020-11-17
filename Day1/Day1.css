@@ -1,0 +1,44 @@
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+h2,p{
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body{
+  border-style: solid;
+  border-color: violet;
+}

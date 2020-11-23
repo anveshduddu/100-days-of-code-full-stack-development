@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  background-color: #252525;
+}
+.wrapper, .search-data{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper{
+  position: fixed;
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.4s linear;
+}
+.wrapper.active{
+  height: 4000px;
+  width: 4000px;
+}
+.search-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.search-btn span{
+  color: #fff;
+  font-size: 22px;
+  line-height: 60px;
+}
+.search-data{
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  text-align: center;
+  /* display: none; */
+}
+.search-data input{
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-data .line{
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s 0.3s linear;
+}
+.search-data .line.active{
+  transform: scaleX(1);
+}
+.search-data label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255,255,255,0.7);
+}
+.search-data input:valid ~ label{
+  opacity: 0;
+}
+.search-data span{
+  color: #fff;
+  position: absolute;
+  width: 50px;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+  line-height: 45px;
+  cursor: pointer;
+}
+.close-btn{
+  position: absolute;
+  z-index: 99;
+  right: 25px;
+  top: 25px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-data, .search-data span,
+.search-data label, .close-btn{
+  display: none;
+}

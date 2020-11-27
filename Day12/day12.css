@@ -1,0 +1,43 @@
+body{
+  background-color: #252525;
+}
+
+table{
+  margin-left: 300px;
+  margin-top: 200px;
+  border-radius: 10px;
+  border: 2px solid #933ded;
+  padding: 5px;
+
+}
+td{
+  padding: 10px;
+}
+         input[type="button"]
+         {
+         background-color:#933ded;
+         color: black;
+         font-size:22px;
+         border: solid black 2px;
+         padding: 5px;
+         width:100%
+         }
+
+         input[type="text"]
+         {
+         background-color:transparent;
+         color:white;
+         padding: 7px;
+         border: solid black 2px;
+         width:100%
+         }
+
+h1,h3{
+  color: #DFB714;
+  text-align:center;
+}
+
+
+td{
+  border-radius: 5px;
+}

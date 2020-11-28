@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+background:#000;
+}
+
+h2{
+  color: #933ded;
+  text-align:center;
+  margin-bottom:200px;
+}
+.container{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-grid{
+    display: grid;
+    grid-column-gap: 1.5rem;
+    max-width: 75rem;
+    width: 100%;
+}
+
+@media(min-width: 75rem){
+    .card-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.card{
+    position: relative;
+
+}
+
+.card::before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+
+}
+
+.card-background{
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.9375rem ;
+    border: 1px solid #933ded;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: filter .2s linear, transform 200ms linear;
+}
+
+.card:hover .card-background{
+    transform: scale(1.25) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card-background{
+    filter: brightness(1) saturate(0) contrast(1) blur(2.25rem);
+}
+
+.card-content{
+    padding: 14.375rem 1.25rem;
+    position: absolute;
+    top: 0;
+}
+
+.card-category{
+    color: #000;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.card-heading{
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.9rem;
+    text-shadow: 0.125rem 0.125rem 1.25rem rgba(0 , 0, 0, .2);
+}
+p{
+    margin-top: -1.875rem;
+}

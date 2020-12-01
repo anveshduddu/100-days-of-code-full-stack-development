@@ -37,5 +37,5 @@ Don't stick too long on one thing if I get stuck. Move on and come back to it
 Imposter Syndrome
 Staying intently focused for 2 hrs at a time (Maybe try Pomodoro technique)
 Did I mention procrastinating?
-<h3>References:</h3>
+#References:
 <a>Took help from google</a>

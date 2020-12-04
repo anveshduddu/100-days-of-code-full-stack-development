@@ -1,0 +1,55 @@
+body{
+
+  background:#232323;
+}
+.nav{
+  float: right;
+}
+
+.navbar-fixed-top{
+  background-color: transparent;
+  border-color:transparent;
+
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li{
+  margin-left: 5px;
+}
+
+.text{
+  color: blue;
+}
+
+.centered {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  color:#933ded;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .9);
+
+}
+
+.profile{
+  text-decoration: none;
+  text-align: center;
+}
+.container:before{
+
+}
+
+button{
+  background: transparent;
+  border: 1px solid transparent;
+  color: grey;
+  margin-top:14px;
+
+}

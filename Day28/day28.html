@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Navigation Bar</title>
+	<link rel="stylesheet" href="day28.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+<h1>Day28 - Dropdown-nav using html,css,js</h1>
+
+<p class="links">Follow me:<a href="https://twitter.com/DudduAnvesh">Twitter</a>
+<a href="https://github.com/anveshduddu/">github</a>
+<a href="https://www.linkedin.com/in/anvesh-duddu-866b531a6/">LinkedIn</a>
+<a href="https://anveshduddu.github.io/">Personal-portfolio</a>  </p>
+<div class="wrapper">
+    <div class="navbar">
+        <div class="left">
+            <ul>
+              <li><a href="#">
+                <i class="fas fa-home"></i></a></li>
+              <li><a href="#">
+                <i class="fas fa-envelope"></i></a></li>
+              <li><a href="#">
+                <i class="fas fa-bell"></i></a></li>
+          </ul>
+        </div>
+        <div class="right">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>Anvesh Duddu<br> <span>Profile</span></p><img src="28.jpg" alt="profile" width="40" style="border-radius:50%"><i class="fas fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown">
+                    <ul>
+                      <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                      <li><a href="#"><i class="fas fa-sliders-h"></i> Settings</a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
+                  </ul>
+                </div>
+
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<script src="day28.js">
+
+</script>
+
+</body>
+</html>

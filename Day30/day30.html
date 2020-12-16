@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism calculator</title>
+
+<link rel="stylesheet" href="day30.css">
+</head>
+<body>
+  <h1>Day-30🤟🤟-Neumorphism Effect| calculator using html and CSS and JS</h1>
+<p class="links">Follow me:<a href="https://twitter.com/DudduAnvesh">Twitter,</a>
+<a href="https://github.com/anveshduddu/">github,</a>
+<a href="https://www.linkedin.com/in/anvesh-duddu-866b531a6/">LinkedIn,</a>
+<a href="https://anveshduddu.github.io/">Personal-portfolio.</a>  </p>
+    <form class="calculator">
+        <input type="text" placeholder="0" name="displayResult" class="area"/>
+        <input type="button" name="" class="btn btn-ac" value="AC" onclick="displayResult.value=' '">
+        <input type="button" name="" value="+/-" onclick="makeNegative(displayResult.value)" class="btn btn-plusorminus">
+        <input type="button" name="" value="%" onclick="calcNumbers(this.value)" class="btn btn-percent">
+        <input type="button" name="" value="/" onclick="calcNumbers(this.value)" class="btn btn-divide">
+        <input type="button" name="" value="7" onclick="calcNumbers(this.value)" class="btn btn-7">
+        <input type="button" name="" value="8" onclick="calcNumbers(this.value)" class="btn btn-8" >
+        <input type="button" name="" value="9" onclick="calcNumbers(this.value)" class="btn btn-9" >
+        <input type="button" name="" value="*" onclick="calcNumbers(this.value)" class="btn btn-multiply">
+        <input type="button" name="" value="4" onclick="calcNumbers(this.value)" class="btn btn-4" >
+        <input type="button" name="" value="5" onclick="calcNumbers(this.value)" class="btn btn-5" >
+        <input type="button" name="" value="6" onclick="calcNumbers(this.value)" class="btn btn-6" >
+        <input type="button" name="" value="-" onclick="calcNumbers(this.value)" class="btn btn-minus">
+        <input type="button" name="" value="1" onclick="calcNumbers(this.value)" class="btn btn-1" >
+        <input type="button" name="" value="2" onclick="calcNumbers(this.value)" class="btn btn-2" >
+        <input type="button" name="" value="3" onclick="calcNumbers(this.value)" class="btn btn-3" >
+        <input type="button" name="" value="+" onclick="calcNumbers(this.value)" class="btn btn-plus">
+        <input type="button" name="" value="0" onclick="calcNumbers(this.value)" class="btn btn-zero" >
+        <input type="button" name="" value="." onclick="calcNumbers(this.value)" class="btn btn-dot" >
+        <input type="button" name="" value="=" onclick="(displayResult.value.includes('%'))?percentage(displayResult.value):displayResult.value=eval(displayResult.value);" class="btn btn-equal">
+    </form>
+<script src="day30.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<div class="w3-container">
+<form #f="ngForm" (ngSubmit)="log(f.value)" name="f1">
+  <div ngModelGroup="fullname">
+  <div class="form-group">
+<label for="name">Product Name</label>
+<input  required minlength="3" maxlength="10" ngModel name="name" #name="ngModel" (change)="log(name)" class="form-control" id="prd">
+<div class="alert alert-danger" *ngIf="name.touched &&   name.invalid">
+  <div *ngIf="name.errors.required">
+    Product Name is required
+  </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <label for="no">quantity</label>
+  <div ng-repeat="item in PC.Items">
+      <button ng-click="PC.minus()" class='btn btn-default'>-</button>
+      <input  ng-model="no" type="number" name="no" ngModel #no="ngModel" (change)="log(no)"  id="qty">
+    <button class='btn btn-default' ng-click="PC.plus()">+</button>
+       <div class="alert alert-danger" *ngIf="no.untouched &&   no.invalid">
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="amount">amount</label>
+  <input required minlength="0" maxlength="10" ngModel name="amount" #amount="ngModel" (change)="log(amount)" class="form-control" id="amt">
+  <div class="alert alert-danger" *ngIf="amount.touched &&   amount.invalid">
+    <div *ngIf="amount.errors.required">
+      amount is required
+    </div>
+    </div>
+    </div>
+      <div class="form-group">
+        <label for="tax ">tax</label>
+      <input required minlength="0" maxlength="10" ngModel name="tax" #tax="ngModel" (change)="log(tax)" class="form-control" id="tax">
+      <div class="alert alert-danger" *ngIf="tax.touched &&   tax.invalid">
+        <div *ngIf="tax.errors.required">
+          tax is required
+        </div>
+        </div>
+        </div>
+  </div>
+  <a  routerLink="/response"><button class="btn btn-primary" [disabled]="!f.valid" (click)="c1(f.value)" onclick="savevalue()">submit</button></a>
+</form>
+</div>

@@ -1,0 +1,33 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<div class="w3-container">
+<table width="100%">
+  <tr>
+      <th>Product Name</th>
+      <th>quantity</th>
+      <th>amount</th>
+      <th>tax</th>
+
+      <th>Total</th>
+      </tr>
+      <tr *ngFor="let obj of contact">
+
+          <td>{{ obj.fullname.name }}</td>
+          <td>{{ obj.fullname.no }}</td>
+          <td>{{  obj.fullname.amount }}</td>
+          <td>{{ obj.fullname.tax }}</td>
+
+          <td>{{  obj.fullname.amount * obj.fullname.no + obj.fullname.tax }} </td>
+
+      </tr>
+</table>
+</div>
+<div class="float">
+    <li routerLinkActive="active current"><a routerLink="/feedback-form" ><i class="fa fa-plus"></i></a></li>
+</div>
+

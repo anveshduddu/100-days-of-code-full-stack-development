@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.form-control.ng-touched.ng-invalid{
+    border: 2px solid rgb(238,7,7);
+}
+.form-control.ng-touched.ng-valid{
+    border: 2px solid rgb(238,7,7);
+}

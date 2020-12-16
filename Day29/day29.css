@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #252525;
+
+
+}
+h1,p{
+  text-align: center;
+  color:#933ded;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.form{
+  margin-top:5%;
+  margin-left: 40%;
+  background: #252525;
+  border-radius: 10px;
+  box-shadow: -5px -5px 8px rgba(255,255,255,0.1),
+   5px 5px 15px rgba(0,0,0,0.8);
+  padding: 50px 20px 60px;
+  position: relative;
+  text-align: center;
+  width: 370px;
+}
+
+.form h2{
+  color:#933ded;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #933ded;
+  text-transform: uppercase;
+}
+
+.form .form-content{
+  margin: 45px 22px;
+  text-align: left;
+}
+
+.form .form-content .form-box{
+  margin-top: 25px;
+}
+
+.form .form-content .form-box label{
+  color: #FFFFFF;
+  display: block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.form .form-content .form-box input{
+  background: #252525;
+  border: none;
+  border-radius: 10px;
+  box-shadow:inset -3px -3px 6px rgba(255,255,255,0.1),
+  inset 3px 3px 6px rgba(0,0,0,0.8);
+  color:#6f6f6f;
+  font-size: 18px;
+  height: 50px;
+  outline: none;
+  padding: 5px 15px;
+  width: 100%;
+}
+.form .form-content .form-box input:focus
+{
+  text-shadow: 0 0 10px #933ded;
+  color: #933ded;
+}
+.form .form-content .form-box input[type="submit"]{
+  box-shadow: -3px -3px 6px rgba(255,255,255,0.1),
+   3px 3px 6px rgba(0,0,0,0.8);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.form .form-content .form-box input[type="submit"]:active{
+  box-shadow: 0 0 20px #933ded;
+  background: #933ded;
+  color: #091921;
+  margin-top: 20px;
+}
+
+.form .form-content .form-box input::placeholder{
+  color: #6f6f6f;
+  text-shadow: none !important;
+  font-size: 18px;
+}
+
+.form-forget{
+  color: #6f6f6f;
+  margin-top: 30px;
+}
+
+.form-forget a{
+  color:#933ded;
+  text-shadow: 0 0 10px #933ded;
+}

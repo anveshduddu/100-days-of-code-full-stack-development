@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	color: white;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url('https://media.wired.com/photos/593236739be5e55af6c238cd/master/pass/SHANGHAI-PUDONG-feature_02.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.frosted {
+  margin:auto;
+	height: 300px;
+	width: 400px;
+  border-radius: 30px;
+	background: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+  padding: 20px;
+  margin-top: 20%;
+}
+.frosted::after {
+
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: -10px;
+	bottom: -10px;
+	right: -10px;
+	left: -10px;
+	background: inherit;
+	filter: blur(10px);
+}
+
+h1,h3,p{
+  color:#933ded;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  margin-bottom:10px;
+}

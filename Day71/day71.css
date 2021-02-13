@@ -1,0 +1,77 @@
+body{
+  background: black;
+  margin: 0;
+  height: 100%;
+}
+h1,.links{
+  color:#933ded;
+  text-align: center;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+aside {
+  margin-top: 2%;
+  font-size: 35px;
+  color: orange;
+  width: 250px;
+  padding-left: 20px;
+  height: 100vh;
+  background: #252525;
+  border-top-right-radius: 80px;
+}
+
+aside a {
+  font-size: 20px;
+  color: #933ded;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+aside a:hover {
+  color: #3f5efb;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+aside a i {
+  margin-right: 5px;
+}
+
+aside a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+
+aside a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+
+aside p {
+  margin: 0;
+  padding: 40px 0;
+}

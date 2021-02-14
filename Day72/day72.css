@@ -1,0 +1,143 @@
+body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+       h1{
+         text-align: center;
+         color:#933ded;
+       }
+
+
+
+        .box {
+            width: 450px;
+            height: 90px;
+            border-radius: 20px;
+            background: #67676780;
+        }
+
+        input[type="radio"] {
+            width: 40px;
+            height: 40px;
+            outline: none;
+            position: relative;
+            -webkit-appearance: none !important;
+            top: 22px;
+            left: 18px;
+            margin-left: 30px;
+
+        }
+
+        input[type="radio"]:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border: 4px solid #933ded;
+            border-radius: 50%;
+            box-sizing: border-box;
+            animation: rollback .30s linear;
+            transition: 0.5s;
+        }
+
+        input:checked[type="radio"].angry:before {
+            content: '😠';
+            font-size: 50px;
+            border: none;
+            border-radius: 0;
+            top: -14px;
+            left: -4px;
+            position: absolute;
+            animation: rotate .30s linear;
+        }
+
+        input:checked[type="radio"].okok:before {
+            content: '😩';
+            font-size: 50px;
+            border: none;
+            border-radius: 0;
+            top: -14px;
+            left: -4px;
+            position: absolute;
+            animation: rotate .30s linear;
+        }
+
+        input:checked[type="radio"].good:before {
+            content: '😊';
+            font-size: 50px;
+            border: none;
+            border-radius: 0;
+            left: -4px;
+            top: -14px;
+            position: absolute;
+            animation: rotate .30s linear;
+        }
+
+        input:checked[type="radio"].better:before {
+            content: '😄';
+            font-size: 50px;
+            border: none;
+            border-radius: 0;
+            top: -14px;
+            left: -4px;
+            position: absolute;
+            animation: rotate .30s linear;
+        }
+
+        input:checked[type="radio"].awesome:before {
+            content: '😍';
+            font-size: 50px;
+            border: none;
+            border-radius: 0;
+            top: -14px;
+            left: -4px;
+            position: absolute;
+            animation: rotate .30s linear;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        a {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            bottom: 6px;
+            margin-left: -44px;
+            color: #fff;
+            background: #aaa;
+            transition: .5s;
+            text-decoration: none;
+            background: #292929d1;
+            padding: 8px 8px;
+            border-radius: 6px;
+        }
+
+        input:checked a {
+            font-size: 200px;
+        }
+
+        @keyframes rollback {
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @keyframes rotate {
+            50% {
+                transform: rotate(50deg);
+            }
+            70% {
+                transform: rotate(-50deg);
+            }
+        }

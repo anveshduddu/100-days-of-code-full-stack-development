@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  font-family: "Segoe UI", sans-serif;
+  background:#252525;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.container h3{
+  color: #933ded;
+max-width: 350px;
+font-size: :25px;
+
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
